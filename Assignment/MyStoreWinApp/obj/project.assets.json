@@ -1,0 +1,116 @@
+{
+  "version": 3,
+  "targets": {
+    "net6.0-windows7.0": {
+      "BusinessObject/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/BusinessObject.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BusinessObject.dll": {}
+        }
+      },
+      "DataAccess/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "BusinessObject": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/DataAccess.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DataAccess.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "BusinessObject/1.0.0": {
+      "type": "project",
+      "path": "../BusinessObject/BusinessObject.csproj",
+      "msbuildProject": "../BusinessObject/BusinessObject.csproj"
+    },
+    "DataAccess/1.0.0": {
+      "type": "project",
+      "path": "../DataAccess/DataAccess.csproj",
+      "msbuildProject": "../DataAccess/DataAccess.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net6.0-windows7.0": [
+      "BusinessObject >= 1.0.0",
+      "DataAccess >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\Lenovo\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "D:\\PRNWorkSpace\\Assignment\\MyStoreWinApp\\MyStoreWinApp.csproj",
+      "projectName": "MyStoreWinApp",
+      "projectPath": "D:\\PRNWorkSpace\\Assignment\\MyStoreWinApp\\MyStoreWinApp.csproj",
+      "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
+      "outputPath": "D:\\PRNWorkSpace\\Assignment\\MyStoreWinApp\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\Lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net6.0-windows"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net6.0-windows7.0": {
+          "targetAlias": "net6.0-windows",
+          "projectReferences": {
+            "D:\\PRNWorkSpace\\Assignment\\BusinessObject\\BusinessObject.csproj": {
+              "projectPath": "D:\\PRNWorkSpace\\Assignment\\BusinessObject\\BusinessObject.csproj"
+            },
+            "D:\\PRNWorkSpace\\Assignment\\DataAccess\\DataAccess.csproj": {
+              "projectPath": "D:\\PRNWorkSpace\\Assignment\\DataAccess\\DataAccess.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net6.0-windows7.0": {
+        "targetAlias": "net6.0-windows",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          },
+          "Microsoft.WindowsDesktop.App.WindowsForms": {
+            "privateAssets": "none"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}
